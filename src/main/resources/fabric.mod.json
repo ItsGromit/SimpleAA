@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "fabricaa",
+  "version": "${version}",
+  "name": "FabricAA",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/fabricaa/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.github.itsgromit.fabricaa.client.FabricaaDataGenerator"
+    ],
+    "client": [
+      "com.github.itsgromit.fabricaa.client.FabricaaClient"
+    ],
+    "main": [
+      "com.github.itsgromit.fabricaa.Fabricaa"
+    ]
+  },
+  "mixins": [
+    "fabricaa.mixins.json",
+    {
+      "config": "fabricaa.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

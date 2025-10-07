@@ -1,0 +1,6 @@
+{
+  "vertex":   "fxaa",
+  "fragment": "fxaa",
+  "samplers": [ { "name": "DiffuseSampler" } ],
+  "attributes": [ "Position" ]
+}
