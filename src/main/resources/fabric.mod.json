@@ -10,9 +10,6 @@
   "icon": "assets/fabricaa/icon.png",
   "environment": "client",
   "entrypoints": {
-    "fabric-datagen": [
-      "com.github.itsgromit.fabricaa.client.FabricaaDataGenerator"
-    ],
     "client": [
       "com.github.itsgromit.fabricaa.client.FabricaaClient"
     ],
