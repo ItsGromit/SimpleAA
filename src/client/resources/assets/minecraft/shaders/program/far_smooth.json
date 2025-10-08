@@ -1,0 +1,9 @@
+{
+  "vertex":   "far_smooth",
+  "fragment": "far_smooth",
+  "samplers": [
+    { "name": "DiffuseSampler" },
+    { "name": "DepthSampler" }
+  ],
+  "attributes": [ "Position" ]
+}

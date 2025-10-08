@@ -73,6 +73,10 @@ public class FabricaaClient implements ClientModInitializer {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (toggleKey.wasPressed()) {
                 enabled = !enabled;
+
+                // Log current state
+                System.out.println("[" + MODID + "] FXAA is " + (enabled ? "enabled" : "disabled"));
+
                 if (enabled) rebuildFxaa();
 
                 MinecraftClient.getInstance().reloadResources();
