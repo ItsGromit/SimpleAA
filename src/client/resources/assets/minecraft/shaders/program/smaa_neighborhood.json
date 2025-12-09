@@ -1,9 +1,9 @@
 {
-  "vertex":   "far_smooth",
-  "fragment": "far_smooth",
+  "vertex": "smaa",
+  "fragment": "smaa_neighborhood",
   "samplers": [
     { "name": "DiffuseSampler" },
-    { "name": "DepthSampler" }
+    { "name": "BlendTex" }
   ],
   "attributes": [ "Position" ]
 }

@@ -1,0 +1,30 @@
+{
+  "targets": [ "swap", "edges", "blend" ],
+  "passes": [
+    {
+      "name": "smaa_edge",
+      "intarget": "minecraft:main",
+      "outtarget": "edges"
+    },
+    {
+      "name": "smaa_blend",
+      "intarget": "edges",
+      "outtarget": "blend"
+    },
+    {
+      "name": "smaa_neighborhood",
+      "intarget": "minecraft:main",
+      "outtarget": "swap",
+      "auxtargets": [
+        { "name": "BlendTex", "id": "blend", "bilinear": true },
+        { "name": "DepthSampler", "id": "minecraft:main", "depth": true, "bilinear": false }
+      ]
+    },
+    {
+      "name": "blit",
+      "intarget": "swap",
+      "outtarget": "minecraft:main"
+    }
+  ],
+  "attributes": [ "Position" ]
+}

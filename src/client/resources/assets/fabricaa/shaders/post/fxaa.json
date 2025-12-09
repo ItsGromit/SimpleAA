@@ -1,12 +1,6 @@
 {
   "targets": ["swap"],
   "passes": [
-    {
-      "name": "far_smooth", "intarget": "minecraft:main", "outtarget": "swap",
-      "auxtargets": [
-        { "name": "DepthSampler", "id": "minecraft:main", "depth": true, "bilinear": false }
-      ]
-    },
     {"name": "fxaa", "intarget": "minecraft:main", "outtarget": "swap",
       "auxtargets": [
         { "name": "DepthSampler", "id": "minecraft:main", "depth": true, "bilinear": false }
