@@ -1,0 +1,8 @@
+{
+  "vertex": "smaa",
+  "fragment": "smaa_blend",
+  "samplers": [
+    { "name": "DiffuseSampler" }
+  ],
+  "attributes": [ "Position" ]
+}

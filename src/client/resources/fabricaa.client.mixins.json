@@ -4,6 +4,8 @@
   "package": "com.github.itsgromit.fabricaa.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "WindowMixin",
+    "GameRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
